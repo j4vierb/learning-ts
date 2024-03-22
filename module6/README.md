@@ -78,6 +78,8 @@ Si se quiere comprobar el tipo de una clase, se puede usar la restricción de ti
 
 Es posible definir una interfaz genérica, una interfaz genérica como un tipo de función, una interfaz genérica como un tipo de clase y definir una clase genérica.
 
+Revisar modulo de microsoft sobre tipos genericos.
+
 ## Implementación de genéricos con tipos y clases personalizados
 
 ```ts
@@ -108,4 +110,11 @@ let myTruck = new Truck;
 accelerate<Truck>(myTruck);
 ```
 
+ Se puede definir una clase genérica de la siguiente manera:
+
+```ts
+class Class<W> {
+    private _property: W;
+}
+```
 
